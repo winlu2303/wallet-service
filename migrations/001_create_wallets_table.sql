@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS wallets (
+    id UUID PRIMARY KEY,
+    balance BIGINT NOT NULL DEFAULT 0,
+    version BIGINT NOT NULL DEFAULT 1,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
+
+CREATE INDEX idx_wallets_id ON wallets(id);
