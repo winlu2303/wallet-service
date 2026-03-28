@@ -75,25 +75,25 @@ SELECT * FROM pg_stat_activity;
 wallet-service/
 ├── cmd/
 │   └── app/
-│       └── main.go                 # Точка входа
+│       └── main.go                
 ├── internal/
 │   ├── api/
-│   │   └── handler.go              # HTTP обработчики
+│   │   └── handler.go              
 │   ├── models/
-│   │   └── wallet.go               # Модели данных
+│   │   └── wallet.go              
 │   ├── repository/
-│   │   └── postgres.go             # Работа с БД
+│   │   └── postgres.go         
 │   └── service/
-│       └── wallet.go               # Бизнес-логика
-│       └── wallet_test.go          # Тест б/л
+│       └── wallet.go             
+│       └── wallet_test.go          
 ├── migrations/
-│   └── 001_create_wallets_table.sql # SQL миграции
-├── docker-compose.yml              # Docker Compose конфиг
-├── Dockerfile                      # Docker образ
-├── config.env                      # Переменные окружения
-├── go.mod                          # Go модуль
-├── go.sum                          # Go зависимости
-└── README.md                       # Документация
+│   └── 001_create_wallets_table.sql 
+├── docker-compose.yml            
+├── Dockerfile                    
+├── config.env                    
+├── go.mod                      
+├── go.sum                        
+└── README.md                   
 ```
 ### Тестирование после запуска
 
