@@ -90,13 +90,9 @@ wallet-service/
 │   │   └── postgres.go             # Работа с БД
 │   └── service/
 │       └── wallet.go               # Бизнес-логика
+│       └── wallet_test.go          # Тест б/л
 ├── migrations/
 │   └── 001_create_wallets_table.sql # SQL миграции
-├── tests/
-│   ├── integration/
-│   │   └── api_test.go             # Интеграционные тесты
-│   └── load/
-│       └── load_test.go            # Нагрузочные тесты
 ├── docker-compose.yml              # Docker Compose конфиг
 ├── Dockerfile                      # Docker образ
 ├── config.env                      # Переменные окружения
