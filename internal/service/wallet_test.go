@@ -107,7 +107,7 @@ func TestProcessOperation_InvalidAmount(t *testing.T) {
 	}
 	_, err := service.ProcessOperation(context.Background(), req)
 	assert.Error(t, err)
-	// Исправлено: проверяем точное сообщение об ошибке
+	// Проверяем точное сообщение об ошибке
 	assert.Contains(t, err.Error(), "amount must be greater than zero")
 }
 
